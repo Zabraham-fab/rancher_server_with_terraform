@@ -1,0 +1,2 @@
+terraform apply komutu uygulandığında aws de yeni bir pem dosyası oluşturulur ve yerelde "~/.ssh/" konumuna çeker.
+yapıyı destroy ettikten sonra eğer yeniden apply edilecekse önce bu konumdaki pem dosyasını silin daha sonra apply yapın.

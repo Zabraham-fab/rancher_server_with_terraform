@@ -1,0 +1,30 @@
+nodes:
+  - address: public_ip # Change with the Public Ip of rancher server
+    internal_address: private_ip # Change with the Private Ip of rancher server
+    user: ubuntu
+    role:
+      - controlplane
+      - etcd
+      - worker
+    hostname_override: domain_name
+
+# ignore_docker_version: true
+services:
+  etcd:
+    snapshot: true
+    creation: 6h
+    retention: 24h
+
+ssh_key_path: ~/.ssh/mykey.pem
+
+# Required for external TLS termination with
+# ingress-nginx v0.22+
+
+ingress:
+  provider: nginx
+  options:
+    use-forwarded-headers: "true"
+
+
+
+
