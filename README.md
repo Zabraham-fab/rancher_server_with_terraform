@@ -1,8 +1,6 @@
-# rancher_server_with_terraform
+# Terraform ile AWS'de Kubernetes Cluster Üzerine Rancher Kurulumu
 
-## Terraform ile AWS'de Kubernetes Cluster Üzerine Rancher Kurulumu
-
-Günümüzde, bulut tabanlı altyapılar popülerlik kazanmış durumda ve bu altyapılar üzerinde konteyner teknolojileri hızla yaygınlaşıyor. 
+## Günümüzde, bulut tabanlı altyapılar popülerlik kazanmış durumda ve bu altyapılar üzerinde konteyner teknolojileri hızla yaygınlaşıyor. 
 
 I. Adım: AWS Cloud Ortamında EC2 Örneği Oluşturma
    - Terraform kullanarak AWS Cloud ortamında bir EC2 örneği oluşturma adımları.
